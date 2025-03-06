@@ -2,27 +2,9 @@
   #style.css
 \*-----------------------------------*/
 
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
 
-  /**
-   * colors
-   */
-
-  /* gradient */
-
+ 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
     hsl(240, 1%, 25%) 3%, 
@@ -111,10 +93,6 @@
 
 }
 
-
-
-
-
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
@@ -156,10 +134,6 @@ input, textarea {
 html { font-family: var(--ff-poppins); }
 
 body { background: var(--smoky-black); }
-
-
-
-
 
 /*-----------------------------------*\
   #REUSED STYLE
@@ -292,10 +266,6 @@ article.active {
   z-index: -1;
 }
 
-
-
-
-
 /*-----------------------------------*\
   #MAIN
 \*-----------------------------------*/
@@ -305,10 +275,6 @@ main {
   margin-bottom: 75px;
   min-width: 259px;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #SIDEBAR
@@ -321,7 +287,9 @@ main {
   transition: var(--transition-2);
 }
 
-.sidebar.active { max-height: 405px; }
+.sidebar.active { 
+  max-height: 405px; 
+}
 
 .sidebar-info {
   position: relative;
@@ -338,15 +306,19 @@ main {
 
 .info-content {
   font-size: 1.0rem;
-  color: var(--light-gray-70);
+  color:#fffbfb;
   font-weight: bold;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
 }
 
-.cursor {
+.typewriter-text, .cursor{
   display: inline;
+  vertical-align: baseline;
+}
+
+.cursor {
   animation: blink 0.8s infinite;
 }
 
@@ -392,7 +364,7 @@ main {
   top: -15px;
   right: -15px;
   border-radius: 0 15px;
-  font-size: 13px;
+  font-size: 12px;
   color: var(--orange-yellow-crayola);
   background: var(--border-gradient-onyx);
   padding: 10px;
@@ -420,14 +392,15 @@ main {
 .info_more-btn span { display: none; }
 
 .sidebar-info_more {
-  opacity: 0;
-  visibility: hidden;
-  transition: var(--transition-2);
+  opacity: 1;
+  visibility: visible;
+  display: block;
 }
 
 .sidebar.active .sidebar-info_more {
   opacity: 1;
   visibility: visible;
+  display: block;
 }
 
 .contacts-list {
@@ -444,8 +417,16 @@ main {
 }
 
 .btn a button {
-  color: var(--light-gray-70);
+  color: greenyellow;
   font-weight: bold;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  text-align: center;
+  background-color: #454545;
+  height: 35px;
+  width: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
 }
 
 .contact-info {
@@ -454,10 +435,20 @@ main {
 }
 
 .contact-title {
-  color: var(--light-gray-70);
+  color:#fffbfb;
   font-size: var(--fs-8);
   text-transform: uppercase;
   margin-bottom: 2px;
+}
+
+.contact-btn{
+  color: greenyellow;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  text-align: center;
+  background-color: #454545;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
 }
 
 .contact-info :is(.contact-link, time, address) {
@@ -465,7 +456,9 @@ main {
   font-size: var(--fs-7);
 }
 
-.contact-info address { font-style: normal; }
+.contact-info address {
+  font-style: normal; 
+}
 
 .social-list {
   display: flex;
@@ -474,19 +467,29 @@ main {
   gap: 15px;
   padding-bottom: 4px;
   padding-left: 7px;
+  position: relative;
+  visibility: visible;
 }
 
-.social-item .social-link {
-  color: var(--light-gray-70);
-  font-size: 18px;
+.whatpsapp .social-link {
+  color: green;
+  font-size: 20px;
+}
+
+.linkedin .social-link{
+  color: blue;
+  font-size: 20px;
+}
+
+.github .social-link {
+  color: white;
+  font-size: 20px;
 }
 
 
-.social-item .social-link:hover { color: var(--light-gray); }
-
-
-
-
+.social-item .social-link:hover {
+  color: var(--light-gray); 
+}
 
 /*-----------------------------------*\
   #NAVBAR
@@ -525,10 +528,6 @@ main {
 
 .navbar-link.active { color: var(--orange-yellow-crayola); }
 
-
-
-
-
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
@@ -543,8 +542,6 @@ main {
 }
 
 .about-text p { margin-bottom: 15px; }
-
-
 
 /**
  * #service 
@@ -794,10 +791,6 @@ main {
 
 .clients-item img:hover { filter: grayscale(0); }
 
-
-
-
-
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
@@ -904,10 +897,6 @@ main {
   height: 100%;
   border-radius: inherit;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #PORTFOLIO
@@ -1064,10 +1053,6 @@ main {
   font-weight: var(--fw-300);
 }
 
-
-
-
-
 /*-----------------------------------*\
   #BLOG
 \*-----------------------------------*/
@@ -1152,9 +1137,20 @@ main {
   line-height: 1.6;
 }
 
+/*-----------------------------------
+CERTIFICATIONS
+------------------------------------*/
 
-
-
+.carousel-container{
+  position: relative;
+  height: 250px;
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  border: 1px solid var(--jet);
+  overflow: hidden;
+  
+}
 
 /*-----------------------------------*\
   #CONTACT
@@ -1259,10 +1255,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
-
-
-
-
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
@@ -1278,20 +1270,6 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .clients-item { min-width: calc(33.33% - 10px); }
-
-
-
-  /**
-   * #PORTFOLIO, BLOG 
-   */
-
-  .project-img,
-  .blog-banner-box { height: auto; }
-
-}
-
-
-
 
 
 /**
@@ -1320,8 +1298,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   }
 
-
-
   /**
    * #REUSED STYLE
    */
@@ -1349,8 +1325,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     font-size: 18px;
   }
 
-
-
   /**
    * #MAIN
    */
@@ -1359,8 +1333,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-top: 60px;
     margin-bottom: 100px;
   }
-
-
 
   /**
    * #SIDEBAR
@@ -1537,19 +1509,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .skills-item:not(:last-child) { margin-bottom: 25px; }
-
-
-
-  /**
-   * #PORTFOLIO, BLOG
-   */
-
-  .project-img, .blog-banner-box { border-radius: 16px; }
-
-  .blog-posts-list { gap: 30px; }
-
-  .blog-content { padding: 25px; }
-
 
 
   /**
@@ -1786,18 +1745,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-  /**
-   * BLOG
-   */
-
-  .blog-banner-box { height: 230px; }
-
-}
-
-
-
-
-
+ 
 /**
  * responsive larger than 1250px screen
  */

@@ -46,6 +46,7 @@
           <label for="">|</label>
         </div>
 
+
         <!--<div class="info-content">
           <h5 class="name" title="Uma Maheswara Reddy">Uma Maheswara Reddy</h5>
 
@@ -75,6 +76,19 @@
             <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
               <a href="mailto:umamaheswara135@gmail.com"><button>Hire Me</button>
               </a>
+          </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="download"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Download</p>
+              <a href="https://raw.githubusercontent.com/umamaheswaram/templates/master/Uma-135/Uma.Maheswara.Reddy.Marthala.pdf" download ><button class="contact-btn">Download Resume</button></a>
           </div>
 
           </li>
@@ -127,19 +141,19 @@
 
         <ul class="social-list">
 
-          <li class="social-item">
+          <li class="whatpsapp">
             <a href="https://web.whatsapp.com/" class="social-link">
               <ion-icon name="logo-whatsapp"></ion-icon>
             </a>
           </li>
 
-          <li class="social-item">
+          <li class="linkedin">
             <a href="https://www.linkedin.com/in/umamaheswaram" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
-          <li class="social-item">
+          <li class="github">
             <a href="https://github.com/umamaheswaram" class="social-link">
               <ion-icon name="logo-github"></ion-icon>
             </a>
@@ -175,10 +189,15 @@
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
           </li>
-
+<!--
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certifications</button>
+          </li>
+        -->
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
+
         </ul>
 
       </nav>
@@ -397,6 +416,7 @@
         <!--
           - testimonials modal
         -->
+          
         <div class="modal-container" data-modal-container>
 
           <div class="overlay" data-overlay></div>
@@ -406,7 +426,7 @@
             <button class="modal-close-btn" data-modal-close-btn>
               <ion-icon name="close-outline"></ion-icon>
             </button>
-<!---->
+
             <div class="modal-img-wrapper">
               <figure class="modal-avatar-box">
                 <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
@@ -421,20 +441,10 @@
 
               <time datetime="2021-06-14">12 June, 2023</time>
 
-              <div data-modal-text>
-              <!--  <p>
-                  ep was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>-->
-              </div>
-
             </div>
 
           </section>
-
+        
         </div>
 
       <!---------------------------------Reference End-------------------------------->
@@ -844,6 +854,26 @@
 
 <!--------------------------------------------------------Portfolio End------------------------------------------------------->
 
+<!--------------------------------------------------------Certifications--------------------------------------------------->
+<!--
+      <article class="certification" data-page="Certifications">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+        <section>
+          <div class="carousel-container" data-aos="fade-up" data-aos-duration="1500">
+            <button class="nav-button prev" onclick="prevCert()">&#10094;</button>
+            <div class="cert-card" id="cert-card">
+                <img src="img/python.png" id="cert-img" alt="Certification">
+                <h3 id="cert-title">Python Programming</h3>
+                <p id="cert-issuer">Issued by CodeTantra</p>
+            </div>
+            <button class="nav-button next" onclick="nextCert()">&#10095;</button>
+        </div>
+        </section>
+      </article>
+      
+    -->
 
 <!--------------------------------------------------------------Contact Start--------------------------------------------------->
 
@@ -867,12 +897,12 @@ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15228.88339441311!2d7
           <form action="#" class="form" data-form>
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" name="fullname" id="name" class="form-input" placeholder="Full name" required data-form-input>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="email" name="email" id="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <textarea name="message" id="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>

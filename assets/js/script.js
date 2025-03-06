@@ -5,6 +5,9 @@
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
+window.addEventListener("resize", function () {
+  sidebar.classList.add("active"); // Ensures sidebar stays open
+});
 
 
 // sidebar variables
@@ -15,16 +18,13 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
 // Typewriter Effect
-const texts = [
-  "WEB DEVELOPER",
-  "SOFTWARE DEVELOPER",
-  "AWS Developer",
-  "SQL DEVELOPER"
-];
-let speed = 100;
 const textElement = document.querySelector(".typewriter-text");
+const cursorElement = document.querySelector(".cursor");
+
+const texts = ["WEB DEVELOPER", "SOFTWARE DEVELOPER", "AWS DEVELOPER", "SQL DEVELOPER"];
 let textIndex = 0;
 let characterIndex = 0;
+let speed = 100;
 
 function typeWriter() {
   if (characterIndex < texts[textIndex].length) {
@@ -48,7 +48,6 @@ function eraseText() {
 }
 
 window.onload = typeWriter;
-
 
 
 // testimonials variables
